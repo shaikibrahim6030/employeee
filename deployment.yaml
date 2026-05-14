@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employeee
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: employeee
+  template:
+    metadata:
+      labels:
+        app: employeee
+    spec:
+      containers:
+      - name: employeee
+        image: l00187756/raguanna
+        ports:
+        - containerPort: 5000
