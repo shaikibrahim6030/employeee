@@ -72,7 +72,7 @@ jobs:
       - name: 6. Verify Deployment
         run: |
           echo "Waiting for deployment to be ready..."
-          kubectl rollout status deployment/l00187756/raguanna  --timeout=120s 
+          kubectl rollout status deployment/employeee --timeout=120s 
           echo -e "\n--- Pod Status ---"
           kubectl get pods
           echo -e "\n--- Service Status ---"
